@@ -37,12 +37,9 @@ services:
       - elasticsearch
 
   logstash:
-    image: docker.elastic.co/logstash/logstash:8.6.2
+    build: ./logstash
     container_name: logstash
     restart: always
-    volumes:
-      - ./logstash/:/dir
-    command: logstash -f /dir/pipeline.conf
     depends_on:
       - elasticsearch
     ports:
