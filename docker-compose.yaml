@@ -6,6 +6,7 @@ services:
     environment:
       discovery.type: single-node
       xpack.security.enabled: false
+      xpack.security.enrollment.enabled: true
       #cluster.name: elasticsearch
       #xpack.license.self_generated.type: trial
       #network.host: 0.0.0.0
