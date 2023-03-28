@@ -44,10 +44,11 @@ services:
   logstash:
     image: logstash:7.16.2
     container_name: logstash
-    restart: always
+    restart: on-failure
     volumes:
       - ./logstash/:/logstash_dir
     command: logstash -f /logstash_dir/pipeline.conf 
+    tty: true
     depends_on:
       - elasticsearch
     ports:
