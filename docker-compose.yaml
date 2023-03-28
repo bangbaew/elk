@@ -47,7 +47,7 @@ services:
     restart: on-failure
     volumes:
       - ./logstash/:/logstash_dir
-    command: logstash -f /logstash_dir/pipeline.conf 
+    command: logstash --path.settings=/logstash_dir
     tty: true
     depends_on:
       - elasticsearch

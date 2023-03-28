@@ -1,0 +1,4 @@
+- pipeline.id: chant
+  path.config: "/logstash_dir/chant.conf"
+- pipeline.id: playlist
+  path.config: "/logstash_dir/playlist.conf"
