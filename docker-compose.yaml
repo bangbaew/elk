@@ -46,7 +46,7 @@ services:
     container_name: logstash
     restart: on-failure
     volumes:
-      - ./logstash/:/logstash_dir
+      - ./logstash/prod:/logstash_dir
     command: logstash --path.settings=/logstash_dir
     tty: true
     depends_on:
