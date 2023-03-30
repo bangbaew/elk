@@ -1,2 +1,0 @@
-- pipeline.id: chant
-  path.config: "/logstash_dir/chant.conf"

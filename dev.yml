@@ -48,6 +48,7 @@ services:
     restart: on-failure
     volumes:
       - ./logstash/dev:/logstash_dir
+      - ./logstash/pipelines.yml:/logstash_dir/pipelines.yml
     command: logstash --path.settings=/logstash_dir
     tty: true
     depends_on:
