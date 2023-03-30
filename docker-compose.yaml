@@ -24,8 +24,8 @@ services:
     #    hard: 65536
     #cap_add:
     #  - IPC_LOCK
-    volumes:
-      - elasticsearch-data:/usr/share/elasticsearch/data
+    #volumes:
+    #  - elasticsearch-data:/usr/share/elasticsearch/data
     ports:
       - 9200:9200
       - 9300:9300
@@ -53,8 +53,6 @@ services:
       - elasticsearch
     ports:
       - '9600:9600'
-    #environment:
-    #  LS_JAVA_OPTS: "-Xmx256m -Xms256m" 
 
-volumes:
-  elasticsearch-data:
+#volumes:
+#  elasticsearch-data:
