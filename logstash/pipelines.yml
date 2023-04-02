@@ -2,3 +2,5 @@
   path.config: "/logstash_dir/chant.conf"
 - pipeline.id: place
   path.config: "/logstash_dir/place.conf"
+- pipeline.id: alert
+  path.config: "/logstash_dir/alert.conf"
