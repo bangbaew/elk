@@ -11,7 +11,8 @@ services:
       #xpack.license.self_generated.type: trial
       #network.host: 0.0.0.0
       #node.name: elasticsearch
-      #ES_JAVA_OPTS: -Xms512m -Xmx512m
+      ES_JAVA_OPTS: -Xms512m -Xmx512m
+      #ES_HEAP_SIZE: 512
       #ELASTIC_PASSWORD: test
       # - bootstrap.memory_lock=true
       #ulimits:
