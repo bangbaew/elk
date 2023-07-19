@@ -4,7 +4,7 @@
   path.config: "/logstash_dir/playlist.conf"
 - pipeline.id: place
   path.config: "/logstash_dir/place.conf"
-- pipeline.id: alert
-  path.config: "/logstash_dir/alert.conf"
+# - pipeline.id: alert
+#   path.config: "/logstash_dir/alert.conf"
 - pipeline.id: dish
   path.config: "/logstash_dir/dish.conf"
