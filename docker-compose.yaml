@@ -1,15 +1,6 @@
 version: '3.3'
 services:
 
-  kibana:
-    container_name: kibana
-    image: docker.elastic.co/kibana/kibana:7.10.2
-    restart: always
-    environment:
-      - ELASTICSEARCH_HOSTS=["https://2psl6t2iqp:pz2wqubdqt@bblmissionpossible-2699956681.ap-southeast-2.bonsaisearch.net:443]
-    ports:
-      - 5601:5601
-
   logstash:
     image: docker.elastic.co/logstash/logstash:7.10.2
     container_name: logstash
